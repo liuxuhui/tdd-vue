@@ -50,14 +50,14 @@ it('Should Return You Win When Input 60', function () {
 });
 
 
-//字符串和数字 的=== bug
+//非数字类型输入值 === bug
 it('Should Return input a number! bitch! When Input ABC', function () {
   let game = new guessNumberGame();
   expect(game.guess("ABC")).toBe("input a number! bitch!");
 });
 
 
-//字符串和数字 的=== bug
+//非数字类型输入值若次数小于0直接结束游戏 的=== bug
 it('Should Return You Lose When Input ABC and chance <4 ', function () {
   let game = new guessNumberGame();
   game.chance = 3;
