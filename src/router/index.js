@@ -1,16 +1,22 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
+import Cube from '../views/Cube.vue'
 
-Vue.use(VueRouter)
+Vue.use(VueRouter);
 
-  const routes = [
+const routes = [
   {
     path: '/',
     name: 'Home',
     component: Home
+  },
+  {
+    path: '/cube',
+    name: 'Cube',
+    component: Cube
   }
-]
+];
 
 const router = new VueRouter({
   mode: 'history',
